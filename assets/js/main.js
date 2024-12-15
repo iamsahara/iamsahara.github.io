@@ -1,6 +1,6 @@
 /**
-* Template Name: Personal
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+* Template Name: 
+* Template URL: https://bootstrapmade.com/-free-resume-bootstrap-template/
 * Updated: Nov 04 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
