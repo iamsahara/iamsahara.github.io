@@ -1,28 +1,14 @@
-/**
-* Template Name: 
-* Template URL: https://bootstrapmade.com/-free-resume-bootstrap-template/
-* Updated: Nov 04 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
-
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #000000; /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #18d26e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: hsla(60, 45%, 61%, 0.843); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +16,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #fafafa;  /* The default color of the main navmenu links */
-  --nav-hover-color: #18d26e; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: hsl(77, 68%, 43%); /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #fafafa; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #18d26e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: hsl(77, 68%, 43%); /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -438,67 +424,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
-.footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
-  position: relative;
-}
-
-.footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  position: relative;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-.footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.footer .social-links {
-  margin: 0 0 30px 0;
-}
-
-.footer .social-links a {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  line-height: 1;
-  margin: 0 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-.footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  text-decoration: none;
-}
-
-.footer .copyright {
-  padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.footer .credits {
-  font-size: 13px;
-  padding-top: 5px;
-}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -582,13 +507,40 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
+  color: var(--default-color); /* Maintain theme consistency */
   background-color: var(--background-color);
   position: relative;
+  padding: 1rem 4rem; /* Balanced padding for better spacing */
+  text-align: center; /* Center the title text */
+  font-size: 2.5rem; /* Professional title size */
+  font-weight: 600; /* Semi-bold for clarity and emphasis */
+  letter-spacing: 1.2px; /* Slight spacing for a clean look */
+  text-transform: capitalize; /* Capitalize the first letter */
+  line-height: 1.2; /* Improved line height for readability */
+
+  /* Add a subtle border bottom */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); 
+
+  /* Add a shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Add a background gradient for sophistication */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.05)
+  );
+  backdrop-filter: blur(8px); /* Glass-like transparency effect */
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Rounded corners for modern look */
+  border-radius: 8px;
+
+  /* Add responsive font sizing */
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
 }
 
 .page-title .heading {
-  padding: 160px 0 80px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -706,20 +658,30 @@ section,
 }
 
 .hero .container {
-  /* position: relative;
+  width: 40%;
+  min-height: 70vh;
+  background: rgba(255, 255, 255, 0); /* Transparent white */
+  backdrop-filter: blur(10px); /* Adds a glass-like blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border for depth */
+  position: relative;
   z-index: 3;
-  margin-right: auto; */
+  margin: auto;
+  border-radius: 12px; /* Rounded corners for a sleek look */
+  padding: 20px; /* Add padding to make the content breathe */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: white; 
 }
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .hero p span {
@@ -760,8 +722,6 @@ section,
   }
 }
 
-/*
-/* General layout for all sections, including DevOps */
 /* --------------------------------------------------------------
 # General Layout for Skills Section
 -------------------------------------------------------------- */
@@ -954,9 +914,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Skills Section
 --------------------------------------------------------------*/
-.services .service-item {
+.Skills .service-item {
   background-color: var(--surface-color);
   text-align: center;
   padding: 80px 20px;
@@ -964,7 +924,7 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
+.Skills .service-item .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -978,13 +938,13 @@ section,
   transform-style: preserve-3d;
 }
 
-.services .service-item .icon i {
+.Skills .service-item .icon i {
   color: var(--contrast-color);
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item .icon::before {
+.Skills .service-item .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -997,51 +957,51 @@ section,
   transform: translateZ(-1px);
 }
 
-.services .service-item h3 {
+.Skills .service-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.services .service-item p {
+.Skills .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
+.Skills .service-item:hover {
   background: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.services .service-item:hover .icon {
+.Skills .service-item:hover .icon {
   background: var(--surface-color);
 }
 
-.services .service-item:hover .icon i {
+.Skills .service-item:hover .icon i {
   color: var(--accent-color);
 }
 
-.services .service-item:hover .icon::before {
+.Skills .service-item:hover .icon::before {
   background: color-mix(in srgb, var(--background-color), transparent 70%);
 }
 
-.services .service-item:hover h3,
-.services .service-item:hover p {
+.Skills .service-item:hover h3,
+.Skills .service-item:hover p {
   color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.service-details .Skills-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list a {
+.service-details .Skills-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1051,17 +1011,17 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.service-details .Skills-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .services-list a:hover {
+.service-details .Skills-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .services-img {
+.service-details .Skills-img {
   margin-bottom: 20px;
 }
 
@@ -1212,33 +1172,33 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.projects-details .projects-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.projects-details .projects-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.projects-details .projects-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.projects-details .projects-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
+.projects-details .portfolio-info {
   background-color: var(--surface-color);
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-info h3 {
+.projects-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1246,27 +1206,27 @@ section,
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.portfolio-details .portfolio-info ul {
+.projects-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.projects-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.projects-details .portfolio-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.projects-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.projects-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
