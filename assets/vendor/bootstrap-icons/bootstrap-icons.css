@@ -774,7 +774,7 @@ url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("wof
 .bi-geo::before { content: "\f3ea"; }
 .bi-gift-fill::before { content: "\f3eb"; }
 .bi-gift::before { content: "\f3ec"; }
-.bi-github::before { content: "\f3ed"; }
+.bi-github::before { content: ""; }
 .bi-globe::before { content: "\f3ee"; }
 .bi-globe2::before { content: "\f3ef"; }
 .bi-google::before { content: "\f3f0"; }

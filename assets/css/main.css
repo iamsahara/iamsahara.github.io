@@ -5,10 +5,10 @@
   --nav-font: "Poppins",  sans-serif;
 }
 :root { 
-  --background-color: #000000; /* Background color for the entire website, including individual sections */
+  /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: hsla(60, 45%, 61%, 0.843); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #f5f4e4; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: hsl(42, 11%, 18%); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -31,7 +31,7 @@
 }
 
 .dark-background {
-  --background-color: rgba(15, 15, 15, 0.975);
+
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #292929f9;
@@ -46,10 +46,17 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
+
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  background: url('../img/hero-bg.jpeg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  color: #ffffff; /* Set text color to contrast the background */
+  font-family: var(--default-font);/* Optional: clean font style */
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 a {
@@ -128,6 +135,14 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+.h-home {
+  color: hsl(212, 64%, 40%); /* Professional LinkedIn-like blue */
+  font-size: 25px !important;
+  font-weight: bold; /* Clean, strong emphasis */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* LinkedIn-style font */
+  letter-spacing: 0.5px; /* Subtle spacing */
+  text-transform: capitalize; /* Keeps only the first letter uppercase */
+}
 .header {
   --background-color: rgba(0, 0, 0, 0);
   color: var(--default-color);
@@ -142,7 +157,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 25px;
   margin-right: 8px;
 }
 
@@ -170,6 +185,7 @@ h6 {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+    align-items: center;
   }
 
   .navmenu ul {
@@ -637,7 +653,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
+  min-width: 30%;
   min-height: 100vh;
   /* position: relative; */
   padding: 80px 0;
@@ -645,6 +661,8 @@ section,
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
+  align-items: center;
+  
 }
 
 .hero-img {
@@ -654,31 +672,50 @@ section,
   width: auto;
   height: 100%;
   object-fit: cover;
+  align-items: center;
   /* z-index: 1; */
 }
 
+
 .hero .container {
-  width: 40%;
-  min-height: 70vh;
+  width: 50vh;
+  min-height: 20vh;
   background: rgba(255, 255, 255, 0); /* Transparent white */
   backdrop-filter: blur(10px); /* Adds a glass-like blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
   border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border for depth */
   position: relative;
   z-index: 3;
-  margin: auto;
+  align-items: center;
   border-radius: 12px; /* Rounded corners for a sleek look */
   padding: 20px; /* Add padding to make the content breathe */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   color: white; 
+
 }
+.container{
+  justify-items: center;
+  }
 
 .hero h2 {
   margin: 0;
   font-size: 32px;
   font-weight: 700;
 }
-
+.profile-photo{
+    width: 100px; /* Ensure consistent size */
+    height: 100px;
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 50%; /* Makes the image round */
+   /* Optional: Adds a border with your preferred color */
+    margin: 1rem 2rem;
+}
+.d-home {
+  color: #000000;
+}
+.h-home{
+  color: #000000;
+}
 .hero p {
   margin: 5px 0 0 0;
   font-size: 18px;
