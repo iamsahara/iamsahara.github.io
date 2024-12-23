@@ -138,9 +138,8 @@
             </div>
             <!-- End Info Item -->
           </div>
-
           <form
-            action="http://localhost:8000/assets/forms/contact.php"
+          action="https://formspree.io/f/xblljevj"
             method="POST"
             class="php-email-form"
             data-aos="fade-up"
@@ -229,5 +228,22 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+  
+      formbutton("create", {action: "https://formspree.io/f/xblljevj", stylesheet: "mystyles.css", onSuccess: function () {
+      alert("Your message has been sent successfully!");
+
+      // Clear the form if needed (only works if you have a custom form on the page)
+      const form = document.querySelector("form"); // Adjust the selector to match your form
+      if (form) {
+        form.reset();
+      }
+    },
+    onError: function () {
+      alert("Failed to send the message. Please try again.");
+    },
+  });
+   </script>
   </body>
 </html>
