@@ -5,7 +5,7 @@
 
   --default-color: #fafafa; /* Primary text color */
   --heading-color: #f5f4e4; /* Heading and title color */
-  --accent-color: hsl(42, 11%, 18%); /* Brand accent */
+  --accent-color: hsl(42, 11%, 18%); 
   --surface-color: #1a1a1a; /* Boxed element backgrounds */
   --contrast-color: #000000; /* Text on bright backgrounds */
 
@@ -22,12 +22,12 @@
   
 }
 
-/* Smooth scroll behavior for modern UX */
+
 :root {
   scroll-behavior: smooth;
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
 
 .light-background {
   --background-color: #1a1a1a;
@@ -47,7 +47,6 @@
   scroll-behavior: smooth;
 }
 
-
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -59,7 +58,7 @@ body {
   color: #ffffff;
   font-family: var(--default-font);
   height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 a {
@@ -133,15 +132,15 @@ h1, h2, h3, h4, h5, h6 {
 # Global Header
 --------------------------------------------------------------*/
 .h-home {
-  color: hsl(212, 64%, 40%); /* Professional LinkedIn-like blue */
+  color: hsl(212, 64%, 40%);
   font-size: 25px !important;
-  font-weight: bold; /* Clean, strong emphasis */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* LinkedIn-style font */
-  letter-spacing: 0.5px; /* Subtle spacing */
-  text-transform: capitalize; /* Keeps only the first letter uppercase */
+  font-weight: bold; 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+  letter-spacing: 0.5px; 
+  text-transform: capitalize; 
 }
 .header {
-  background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+  background-color: rgba(0, 0, 0, 0.8); 
   color: var(--default-color);
   padding: 15px 0;
   position: fixed;
@@ -152,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-item {
-  background-color: transparent; /* Fully transparent */
+  background-color: transparent;
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
@@ -197,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background: rgba(255, 255, 255, 0.1); /* Light glass effect */
+    background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
@@ -355,21 +354,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .navmenu ul {
-    display: none; /* Hidden by default */
+    display: none; 
     list-style: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    border-radius: 12px; /* Modern rounded corners */
-    background-color: rgba(255, 255, 255, 0); /* Fully transparent */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for visibility */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
     overflow-y: auto;
-    max-height: 300px; /* Limit height to make long menus scrollable */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    opacity: 0; /* Initially hidden */
-    transform: translateY(-20px); /* Slide-down effect */
+    max-height: 300px; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    opacity: 0; 
+    transform: translateY(-20px); 
     z-index: 9998;
   }
   
@@ -378,28 +377,28 @@ h1, h2, h3, h4, h5, h6 {
   .navmenu ul:focus-within {
     display: block;
     opacity: 1;
-    transform: translateY(0); /* Bring dropdown into view */
+    transform: translateY(0); 
   }
   
-  /* Style for individual list items */
+  
   .navmenu ul li {
     padding: 10px 20px;
     text-align: left;
     font-size: 16px;
-    color: #fff; /* White text */
+    color: #fff; 
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* Hover effects with fully customizable colors */
+ 
   :root {
-    --hover-bg-color: rgba(255, 255, 255, 0.1); /* Light transparent hover background */
-    --hover-text-color: #ff6347; /* Example: Tomato red for hover text */
+    --hover-bg-color: rgba(255, 255, 255, 0.1); 
+    --hover-text-color: #ff6347; 
   }
   
   .navmenu ul li:hover {
-    background-color: var(--hover-bg-color); /* Transparent hover background */
-    color: var(--hover-text-color); /* Change text color */
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
   }
 
   .navmenu a,
@@ -696,22 +695,21 @@ section,
   height: 100%;
   object-fit: cover;
   align-items: center;
-  /* z-index: 1; */
 }
 
 .hero .container {
   width: 50vh;
   min-height: 20vh;
-  background: rgba(255, 255, 255, 0); /* Transparent white */
-  backdrop-filter: blur(10px); /* Adds a glass-like blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
-  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border for depth */
+  background: rgba(255, 255, 255, 0); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.18); 
   position: relative;
   z-index: 3;
   align-items: center;
-  border-radius: 12px; /* Rounded corners for a sleek look */
-  padding: 20px; /* Add padding to make the content breathe */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border-radius: 12px; 
+  padding: 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   color: white; 
 
 }
@@ -725,11 +723,10 @@ section,
   font-weight: 700;
 }
 .profile-photo{
-    width: 100px; /* Ensure consistent size */
+    width: 100px; 
     height: 100px;
-    object-fit: cover; /* Ensures the image scales nicely */
-    border-radius: 50%; /* Makes the image round */
-   /* Optional: Adds a border with your preferred color */
+    object-fit: cover; 
+    border-radius: 50%;
     margin: 1rem 2rem;
 }
 .d-home {
@@ -768,7 +765,7 @@ section,
 
 .social-links a:hover::after {
   position: absolute;
-  top: 40px; /* Adjust based on icon size */
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.8);
@@ -782,13 +779,13 @@ section,
 .social-links a span {
   margin-top: 5px;
   font-size: 0.85rem;
-  color: white; /* Adjust based on your theme */
+  color: white;
   font-weight: 500;
 }
 .resume-download {
   display: flex;
-  justify-content: center; /* Center the button */
-  margin-top: 20px; /* Add space above the button */
+  justify-content: center; 
+  margin-top: 20px; 
 }
 
 .download-button {
@@ -796,7 +793,7 @@ section,
   align-items: center;
   padding: 10px 20px;
 
-  background: linear-gradient(90deg, #0073e6, #005bb5); /* Modern gradient */
+  background: linear-gradient(90deg, #0073e6, #005bb5); 
   color: white;
   border: none;
   border-radius: 5px;
@@ -804,17 +801,17 @@ section,
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .download-button:hover {
-  background: linear-gradient(90deg, #005bb5, #003f7f); /* Darker on hover */
-  transform: translateY(-2px); /* Slight lift on hover */
+  background: linear-gradient(90deg, #005bb5, #003f7f); 
+  transform: translateY(-2px);
 }
 
 .download-icon {
-  margin-right: 10px; /* Space between icon and text */
+  margin-right: 10px;
 }
 
 .hero .social-links a {
@@ -924,63 +921,62 @@ section,
 # Style for each skill container (Frontend, Backend, DevOps)
 -------------------------------------------------------------- */
 .skills__list-container {
-  display: flex; /* Align icon and text in a row */
-  align-items: center; /* Vertically align content */
-  justify-content: flex-start; /* Align text and icon properly */
-  padding: 8px 8px; /* Small padding inside the item */
-  min-width: 120px; /* Ensure all items have the same minimum width */
-  max-width: 160px; /* Consistent max size */
-  height: 70px; /* Fixed height for all items */
-  border-radius: 12px; /* Rounded corners */
-  background: rgba(255, 255, 255, 0.5); /* Transparent background */
-  backdrop-filter: blur(10px); /* Blur effect for modern look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;/* Smooth fade-in */
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  padding: 8px 8px; 
+  min-width: 120px; 
+  max-width: 160px; 
+  height: 70px; 
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* --------------------------------------------------------------
 # Hover Effects for Skills Cards
 -------------------------------------------------------------- */
 .skills__list-container:hover {
-  transform: translateY(-5px); /* Slightly lift the card on hover */
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
-  background-color: #f3f8ff; /* Soft background color change */
+  transform: translateY(-5px); 
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+  background-color: #f3f8ff; 
 }
 
-/* Flashy effect for icons on hover */
 .skills__list-container:hover .icons {
-  width: 50px; /* Icon size */
+  width: 50px;
   height: 50px;
-  margin-right: 15px; /* Spacing between icon and text */
+  margin-right: 15px;
   transition: transform 0.5s ease, filter 0.3s ease;
-  filter: brightness(1.2); /* Slight brightness eBrighten on hover */
+  filter: brightness(1.2); 
 }
 .skills__list-container:hover .icons {
-  transform: rotate(360deg) scale(1.3); /* Rotate and scale on hover */
-  filter: brightness(1.5); /* Brighten icon */
+  transform: rotate(360deg) scale(1.3); 
+  filter: brightness(1.5);
 }
 
 
 /* Consistent icon size */
 .skills__list-container .icons {
-  width: 50px; /* Icon size */
+  width: 50px; 
   height: 50px;
-  margin-right: 10px; /* Space between icon and text */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth icon animation */
+  margin-right: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 
 /* Text styling for skills */
 .skills__list-items {
   display: flex;
-  flex-direction: column; /* Align title and category vertically */
+  flex-direction: column; 
   justify-content: center;
 }
 
 .skills__item-title {
-  font-size: 16px; /* Font size for the title */
-  font-weight: 600; /* Slightly bold */
-  color: #171616; /* White text */
+  font-size: 16px; 
+  font-weight: 600; 
+  color: #171616; 
   transition: color 0.3s ease;
 }
 
@@ -988,7 +984,6 @@ section,
   display: none;
 }
 
-/* Change title color on hover */
 .skills__list-container:hover .skills__item-title {
   color: #ff6347;
 }
@@ -1011,13 +1006,13 @@ section,
 # Flashing Glow Effect on Hover
 -------------------------------------------------------------- */
 .skills__list-container:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background: rgba(255, 255, 255, 0.3); 
 }
 .skills__list-container {
-  width: 100%; /* Full width for smaller screens */
-  padding: 5px; /* Smaller padding */
+  width: 100%; 
+  padding: 5px;
 }
 
 /* --------------------------------------------------------------
@@ -1025,22 +1020,22 @@ section,
 -------------------------------------------------------------- */
 @media (max-width: 768px) {
   .skills__list-wrapper {
-    flex-direction: column; /* Stack items vertically on tablets */
+    flex-direction: row; 
     gap: 15px; 
   }
 }
 
 @media (max-width: 480px) {
   .skills__list-wrapper {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-columns: 1fr; 
   }
 
   .skills__list-container {
-    padding: 15px; /* Consistent padding for smaller screens */
+    padding: 15px; 
   }
 
   .skills__item-title {
-    font-size: 14px; /* Adjust font size for small screens */
+    font-size: 14px; 
   }
 
   .skills__item-category {
@@ -1088,7 +1083,6 @@ background: rgba(255, 255, 255, 0.9);
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
-  /* background: color-mix(in srgb, var(--accent-color), transparent 80%); */
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
@@ -1426,15 +1420,15 @@ background: rgba(255, 255, 255, 0.9);
  
   .php-email-form {
     padding: 0 !important;
-    box-sizing: border-box !important; /* Ensure padding doesn't shrink the form */
+    box-sizing: border-box !important; 
     margin: 0 !important;
   }
 
   .contact .php-email-form input[type=text],
   .contact .php-email-form input[type=email],
   .contact .php-email-form textarea {
-    width: 100% !important; /* Ensure inputs span the entire width */
-    box-sizing: border-box !important; /* Avoid input overflow */
+    width: 100% !important; 
+    box-sizing: border-box !important; 
     padding: 0;
   }
   .contact .section{
@@ -1443,8 +1437,8 @@ background: rgba(255, 255, 255, 0.9);
   }
 
   .contact .php-email-form button[type=submit] {
-    width: 100% !important; /* Make the button span the width of the form */
-    margin: 15px 0 0 0 !important; /* Add spacing to position correctly */
+    width: 100% !important; 
+    margin: 15px 0 0 0 !important; 
     box-sizing: border-box !important;
   }
 
