@@ -571,61 +571,82 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 #About 
 --------------------------------------------------------------*/
-/* About Section */
+/* About Section Styling */
 .about-section {
-  border-radius: 5px;
-  margin: 10rem;
-  padding: 10px;
-  background-color: color-mix(in srgb, white, transparent 20%);
-  color: #000000;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 3rem auto;
+  max-width: 800px;
+  margin-top: 5rem;
 }
 
-.about-container {
-  background: var(--card-background);
-  box-shadow: 0 4px 8px var(--shadow-color);
-  padding: 5px;
-  border-radius: var(--border-radius);
-  width: 100%;
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.about-container p2 {
+.about-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.about-highlight {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #007bff;
+  margin: 1.5rem 0;
+}
+
+.about-cta {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  color: var(--accent-color);
-  margin-bottom: 10px;
-  width: 100%;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
-
-
-
-
-
-
-/* Button Styles */
-a.btn-view-details {
-  display: inline-block;
-  padding: 10px 20px;
-  background: var(--accent-color);
+.btn-primary {
+  background-color: #007bff;
   color: #fff;
-  text-decoration: none;
-  border-radius: var(--border-radius);
-  transition: background 0.3s;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.4);
 }
 
-a.btn-view-details:hover {
-  background: var(--primary-color);
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.6);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-container {
-    padding: 20px;
-  }
+.btn-outline-primary {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
 
-  .navmenu ul {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 /*--------------------------------------------------------------
 # Global Sections
@@ -741,7 +762,6 @@ section,
 }
 
 .social-links a:hover::after {
-  content: attr(title); /* Display the title attribute */
   position: absolute;
   top: 40px; /* Adjust based on icon size */
   left: 50%;
@@ -1103,217 +1123,194 @@ background: rgba(255, 255, 255, 0.9);
   color: var(--contrast-color);
 }
 
-/*--------------------------------------------------------------
-# Projects Section
---------------------------------------------------------------*/
-.projects-section {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  gap: 20px; /* Add space between items */
-  justify-content: center; 
-  align-items: center;
-  margin-top: 5rem;
-  margin-left: 3rem;
-}
-
-/* General Styling for Project Cards */
-.projects-content {
-  flex: 0 0 calc(50.33% - 20px); /* 3 items per row, accounting for the gap */
-  max-width: calc(50.33% - 20px);
-  border-radius: 10px; /* Rounded edges */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-
-.projects-content:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
-}
-
-/* Project Images */
-.projects-content img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.projects-content:hover img {
-  transform: scale(1.05); /* Zoom effect */
-}
-
-/* Overlay Info */
-.projects-info {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.projects-content:hover .projects-info {
-  opacity: 1;
-}
-
-/* Title and Description */
-.projects-info h4 {
-  font-size: 1.5rem;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.projects-info p {
-  font-size: 1rem;
-  color: #1c1919;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: 1.4;
-}
-
-/* Action Links (Icons) */
-.projects-info .preview-link,
-.projects-info .details-link {
-  font-size: 1.5rem;
-  color: #131212;
- 
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-
-.btn-view-details {
-  display: inline-block;
-  background: linear-gradient(90deg, #007bff, #0056b3);
-  color: #fff;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btn-view-details:hover {
-  background: linear-gradient(90deg, #0056b3, #003f7f);
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .projects-info h4 {
-    font-size: 1.2rem;
-  }
-
-  .projects-info p {
-    font-size: 0.9rem;
-  }
-
-  .btn-view-details {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .projects-section {
-    padding: 30px 10px;
-  }
-
-  .projects-info {
-    padding: 15px;
-  }
-
-  .projects-info h4 {
-    font-size: 1rem;
-  }
-
-  .projects-info p {
-    font-size: 0.8rem;
-  }
-
-  .btn-view-details {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-  }
-}
 
 /*--------------------------------------------------------------
 # projects Details Section
 --------------------------------------------------------------*/
-.projects-details .projects-details-slider img {
+/* General Styling */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.img-projects {
   width: 100%;
+  max-width: 40rem;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.projects-details .projects-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+.img-projects:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.projects-details .projects-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
+/* Project Card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-details .projects-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.projects-details .projects-info {
-  background-color: var(--surface-color);
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+/* Project Details */
+.project-details {
+  text-align: center;
 }
 
-.projects-details .projects-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
 
-.projects-details .projects-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
+.project-description {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
-.projects-details .projects-info ul li+li {
-  margin-top: 10px;
+.technologies-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0078ff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
-.projects-details .projects-description {
-  padding-top: 30px;
+/* Technologies */
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
-.projects-details .projects-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: grayscale(100%);
 }
 
-.projects-details .projects-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+.tech-icon:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
+/* Divider */
+.project-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 3rem 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .projects-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .tech-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+.visit-link {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.visit-link:hover {
+  background-color: #0056b3;
+}
+.deployment-status {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #ffc107;
+  color: #212529;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.visit-link-2 {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #6c757d;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1321,7 +1318,7 @@ background: rgba(255, 255, 255, 0.9);
 .contact  {
   border-radius: 10px;
   margin: 5rem;
-  background-color: color-mix(in srgb, var(--default-color), transparent 30%);
+  background-color: color-mix(in srgb, var(--default-color), transparent 15%);
   padding: 20px 30px;
   color: #000000;
 }
@@ -1378,36 +1375,66 @@ background: rgba(255, 255, 255, 0.9);
   }
 }
 
+.contact .php-email-form {
+  background: linear-gradient(135deg, #f3f8ff, #e8f0fd); /* Bright gradient background */
+  padding: 30px;
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  color: var(--default-color);
-  background-color: color-mix(in srgb, black, transparent 80%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
+  color: #333; /* Friendly dark text */
+  background-color: #ffffff; /* Clean white background */
+  border: 2px solid transparent; /* Default no border */
+  font-size: 16px; /* Comfortable size */
+  padding: 12px 15px; /* Balanced padding */
+  border-radius: 8px; /* Soft, friendly corners */
+  transition: all 0.3s ease; /* Smooth interactions */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Light shadow for texture */
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #ff9f43; /* Cheerful orange highlight */
+  box-shadow: 0 4px 8px rgba(255, 159, 67, 0.4); /* Warm glow effect */
+  outline: none;
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: #999; /* Friendly gray placeholder */
+  font-style: italic; /* Add personality */
+}
+
+.contact .php-email-form button[type=submit] {
+  color: #ffffff; /* Bright white text */
+  background: linear-gradient(135deg, #ff9f43, #ff6f61); /* Vibrant gradient */
+  border: none;
+  padding: 12px 30px; /* Comfortable click area */
+  font-size: 16px; /* Modern size */
+  font-weight: bold; /* Bold for emphasis */
+  border-radius: 50px; /* Friendly pill shape */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ff6f61, #ff3f43); /* More vibrant on hover */
+  box-shadow: 0 6px 15px rgba(255, 63, 67, 0.4); /* Glow effect */
+  transform: translateY(-3px); /* Lift on hover */
 }
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+
+.contact .php-email-form button[type=submit]:focus {
+  outline: none;
+  box-shadow: 0 8px 20px rgba(255, 63, 67, 0.6); /* Stronger glow on focus */
+}
+
+.contact .php-email-form textarea {
+  resize: none; /* Prevent awkward resizing */
+  min-height: 120px; /* Comfortable typing space */
 }

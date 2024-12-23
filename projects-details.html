@@ -1,123 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MyProjects</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Projects Details</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
+  <body class="projects-page project-details">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename"></h1>
+        </a>
 
-<body class="Projects-details-page">
-
-  <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo">
-        <h1 class="sitename">MyPortfolio</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Skills.html">Skills</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main -->
-  <main class="main">
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="container text-center">
-        <h2>Project Details</h2>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
-    </div>
-
-    <!-- Projects Details Section -->
-    <section id="Projects-details" class="Projects-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <!-- Image Slider -->
-          <div class="col-lg-8">
-            <div class="Projects-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/Projects/app-1.jpg" alt="Project Image 1">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/Projects/product-1.jpg" alt="Project Image 2">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/Projects/branding-1.jpg" alt="Project Image 3">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/Projects/books-1.jpg" alt="Project Image 4">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+    </header>
+    <main class="main">
+      <div class="projects-container">
+        <!-- Project: MedPass -->
+        <div class="project-card">
+          <section class="project-details">
+            <h2 class="project-title">MedPass</h2>
+            <p class="project-description">
+              MedPass is a centralized healthcare platform that simplifies
+              specialist appointment referrals. Doctors can log in securely, find
+              nearby specialists using OpenStreetMap, and book appointments
+              efficiently. JWT authentication ensures secure data access.
+            </p>
+            <h3 class="technologies-title">Technologies</h3>
+            <div class="technologies">
+              <img src="./assets/img/logo/html-5.svg" alt="HTML" class="tech-icon" />
+              <img
+                src="./assets/img/logo/javascript.svg"
+                alt="JavaScript"
+                class="tech-icon"
+              />
+              <img src="./assets/img/logo/react.svg" alt="React" class="tech-icon" />
+              <img src="./assets/img/logo/sass.svg" alt="SASS" class="tech-icon" />
+              <img
+                src="./assets/img/logo/node-js.svg"
+                alt="Node.JS"
+                class="tech-icon"
+              />
+              <img
+                src="./assets/img/logo/express.svg"
+                alt="Express"
+                class="tech-icon"
+              />
+              <img
+                src="./assets/img/logo/material-ui.svg"
+                alt="Mui"
+                class="tech-icon"
+              />
+              <img
+                src="./assets/img/logo/jwt-logo-65D86B4640-seeklogo.com.png"
+                alt="JWT Authentication"
+                class="tech-icon"
+              />
+              <img src="./assets/img/logo/mysql-logo.svg" alt="MySQL" class="tech-icon" />
             </div>
-          </div>
-
-          <!-- Project Info -->
-          <div class="col-lg-4">
-            <div class="Projects-info">
-              <section class="project-details">
-                <h2 class="project-title">InStock</h2>
-                <p class="project-description">
-                  Instock is a warehouse and inventory management system that was built in a week by a team of four developers using Agile workflows (Jira) and GitFlow. Every morning we would have a stand-up to mimic a work environment. I really enjoyed working with Jira, GitFlow, and Scrum methodologies. It allowed us to take a project that felt daunting and break it down into manageable pieces. Instock is a fully responsive full-stack web application.
-                </p>
-                <h3 class="technologies-title">Technologies</h3>
-                <div class="technologies">
-                  <span class="technology">HTML</span>
-                  <span class="technology">JavaScript</span>
-                  <span class="technology">React</span>
-                  <span class="technology">SASS</span>
-                  <span class="technology">Node.JS</span>
-                  <span class="technology">Express.JS</span>
-                  <span class="technology">MySQL</span>
-                </div>
-              </section>
+          </section>
+        </div>
+    
+        <!-- Divider -->
+        <hr class="project-divider" />
+    
+        <!-- Project: InStock -->
+        <div class="project-card">
+          <section class="project-details">
+            <h2 class="project-title">InStock</h2>
+            <p class="project-description">
+              InStock is a warehouse and inventory management system built in a week by a
+              team of four developers using Agile workflows (Jira) and GitFlow. It is a fully
+              responsive full-stack web application for efficient inventory tracking.
+            </p>
+            <h3 class="technologies-title">Technologies</h3>
+            <div class="technologies">
+              <img src="./assets/img/logo/html-5.svg" alt="HTML" class="tech-icon" />
+              <img
+                src="./assets/img/logo/javascript.svg"
+                alt="JavaScript"
+                class="tech-icon"
+              />
+              <img src="./assets/img/logo/react.svg" alt="React" class="tech-icon" />
+              <img src="./assets/img/logo/sass.svg" alt="SASS" class="tech-icon" />
+              <img
+                src="./assets/img/logo/node-js.svg"
+                alt="Node.JS"
+                class="tech-icon"
+              />
+              <img
+                src="./assets/img/logo/express.svg"
+                alt="Express"
+                class="tech-icon"
+              />
+              <img src="./assets/img/logo/mysql-logo.svg" alt="MySQL" class="tech-icon" />
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </section>
-  </main>
+    </main>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
