@@ -34,26 +34,11 @@
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
   <body class="index-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center"> </a>
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <!-- <li><a href="#contact">Contact</a></li> -->
-            <li><a href="#about">About</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-      </div>
-    </header>
     <main class="main">
       <!-- Hero Section -->
+    
       <section id="hero" class="hero section dark-background">
+        <div class="wrapper">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
           <img
             class="profile-photo"
@@ -99,404 +84,419 @@
                 width="24"
                 height="24"
             /></a>
-         
-          <a href="mailto:sahar.abdollahi@torontomu.ca">
-            <img src="./assets/img/logo/email.svg" alt="Email" width="24" height="24" />
-          </a>
-      
-      </div>
-        </div>
-      </section>
-      <section id="skills" class="Skills section">
-        <div class="container">
-          <div class="skills-scroll-outer overflow-hidden">
-            <div class="skills-scroll-inner">
-              <div class="skills__list-wrapper d-inline-flex gap-4">
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img
-                src="./assets/img/logo/html-5.svg"
-                alt="HTML"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">HTML</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img src="./assets/img/logo/css-3.svg" alt="CSS" class="icons" />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">CSS</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img src="./assets/img/logo/sass.svg" alt="SASS" class="icons" />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">SASS</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img
-                src="./assets/img/logo/material-ui.svg"
-                alt="SASS"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">MUI</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                transform: translate(0px, 0px);
-                filter: grayscale(0);
-              "
-            >
-              <img
-                src="./assets/img/logo/tailwind.svg"
-                alt="Tailwind"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Tailwind</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img
-                src="./assets/img/logo/javascript.svg"
-                alt="JavaScript"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">JavaScript</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img
-                src="./assets/img/logo/typescript.svg"
-                alt="TypeScript"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">TypeScript</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img
-                src="./assets/img/logo/react.svg"
-                alt="React"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">React</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_frontend"
-              style="opacity: 1; transform: translate(0px, 0px)"
-            >
-              <img
-                src="./assets/img/logo/jest-snapshot.svg"
-                alt="Jest"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Jest</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/python.svg"
-                alt="Python"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Python</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/fastapi.svg"
-                alt="FastAPI"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">FastAPI</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/express.svg"
-                alt="expressjs"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Express</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/node-js.svg"
-                alt="Node.js"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Node.js</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/postman-icon.svg"
-                alt="Postman"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Postman</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/axios.svg"
-                alt="Axios"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">AXIOS</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/jwt-logo-65D86B4640-seeklogo.com.png"
-                alt="JWT"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">JWT</h4>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_backend"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/mysql-logo.svg"
-                alt="MySQL"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">MySQL</h4>
-                <p class="skills__item-category">Backend</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_devops"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/github.svg"
-                alt="GitHub"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Git</h4>
-                <p class="skills__item-category">DevOps</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_devops"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/vs-code.svg"
-                alt="Visual Studio Code"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">VS Code</h4>
-                <p class="skills__item-category">DevOps</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_devops"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/heroku.svg"
-                alt="Heroku"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Heroku</h4>
-                <p class="skills__item-category">DevOps</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_devops"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/jira-1.svg"
-                alt="Jira"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Jira</h4>
-                <p class="skills__item-category">DevOps</p>
-              </div>
-            </div>
-            <div
-              class="skills__list-container"
-              id="skills_devops"
-              style="
-                opacity: 1;
-                filter: grayscale(0);
-                transform: translate(0px, 0px);
-              "
-            >
-              <img
-                src="./assets/img/logo/notion.svg"
-                alt="Notion"
-                class="icons"
-              />
-              <div class="skills__list-items">
-                <h4 class="skills__item-title">Notion</h4>
-                <p class="skills__item-category">DevOps</p>
-              </div>
-            </div>
-      </div>
-    </div>
-      </section>
-      <section id="projects" class="projects-section section">
-            <span>Explore My Work</span>
-          </div>
-        </div>
 
+            <a href="mailto:sahar.abdollahi@torontomu.ca">
+              <img
+                src="./assets/img/logo/email.svg"
+                alt="Email"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+          <a
+            href="#projects"
+            class="modern-button"
+            style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem; padding: 10px 20px;"
+          >
+            Projects
+          </a>
+        </div>
+        <section id="skills" class="Skills section" >
+          <div class="skills-container">
+            <div class="skills-scroll-outer overflow-hidden w-100">
+              <div class="skills-scroll-inner">
+                <div class="skills__list-wrapper d-inline-flex gap-5 mt-20">
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/html-5.svg"
+                      alt="HTML"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">HTML</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/css-3.svg"
+                      alt="CSS"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">CSS</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/sass.svg"
+                      alt="SASS"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">SASS</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/material-ui.svg"
+                      alt="SASS"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">MUI</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      transform: translate(0px, 0px);
+                      filter: grayscale(0);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/tailwind.svg"
+                      alt="Tailwind"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Tailwind</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/javascript.svg"
+                      alt="JavaScript"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">JavaScript</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/typescript.svg"
+                      alt="TypeScript"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">TypeScript</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/react.svg"
+                      alt="React"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">React</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_frontend"
+                    style="opacity: 1; transform: translate(0px, 0px)"
+                  >
+                    <img
+                      src="./assets/img/logo/jest-snapshot.svg"
+                      alt="Jest"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Jest</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/python.svg"
+                      alt="Python"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Python</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/fastapi.svg"
+                      alt="FastAPI"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">FastAPI</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/express.svg"
+                      alt="expressjs"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Express</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/node-js.svg"
+                      alt="Node.js"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Node.js</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/postman-icon.svg"
+                      alt="Postman"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Postman</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/axios.svg"
+                      alt="Axios"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">AXIOS</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/jwt-logo-65D86B4640-seeklogo.com.png"
+                      alt="JWT"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">JWT</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_backend"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/mysql-logo.svg"
+                      alt="MySQL"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">MySQL</h4>
+                      <p class="skills__item-category">Backend</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_devops"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/github.svg"
+                      alt="GitHub"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Git</h4>
+                      <p class="skills__item-category">DevOps</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_devops"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/vs-code.svg"
+                      alt="Visual Studio Code"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">VS Code</h4>
+                      <p class="skills__item-category">DevOps</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_devops"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/heroku.svg"
+                      alt="Heroku"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Heroku</h4>
+                      <p class="skills__item-category">DevOps</p>
+                    </div>
+                  </div>
+                  <div
+                    class="skills__list-container"
+                    id="skills_devops"
+                    style="
+                      opacity: 1;
+                      filter: grayscale(0);
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <img
+                      src="./assets/img/logo/jira-1.svg"
+                      alt="Jira"
+                      class="icons"
+                    />
+                    <div class="skills__list-items">
+                      <h4 class="skills__item-title">Jira</h4>
+                      <p class="skills__item-category">DevOps</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        </section>
+        
+        
+      </div>
+      </section>
+    
+      <section id="projects" class="projects-section section" mt-0>
+        <span>Explore My Work</span>
         <div
           class="container overflow-auto pb-4"
           style="padding-left: 1rem"
           data-aos="fade-up"
         >
-          <div class="projects-wrapper d-flex flex-nowrap gap-3 overflow-auto" style="padding-bottom: 1rem; scroll-snap-type: x mandatory;">
+          <div
+            class="projects-wrapper d-flex flex-nowrap gap-3 overflow-auto"
+            style="padding-bottom: 1rem; scroll-snap-type: x mandatory"
+          >
             <!-- MedPass -->
-            <div class="card" style="min-width: 300px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 300px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/projects/MedPass.jpg"
@@ -539,7 +539,15 @@
             </div>
 
             <!-- Task Manager -->
-            <div class="card" style="min-width: 300px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 300px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/projects/task-management.png"
@@ -573,7 +581,15 @@
             </div>
 
             <!-- InStock -->
-            <div class="card" style="min-width: 300px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 300px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/projects/inStock.png"
@@ -600,7 +616,15 @@
               </div>
             </div>
             <!-- Velora Bakery -->
-            <div class="card" style="min-width: 300px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 300px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/velora-bakery.png"
@@ -641,7 +665,15 @@
               </div>
             </div>
             <!-- BandSite -->
-            <div class="card" style="min-width: 300px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 300px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/projects/bandsite.png"
@@ -675,7 +707,15 @@
             </div>
 
             <!-- Sahara Portfolio -->
-            <div class="card" style="min-width: 300px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 300px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/projects/sahara-portfolio.png"
@@ -707,7 +747,15 @@
             </div>
 
             <!-- Sadaf Portfolio -->
-            <div class="card" style="min-width: 420px; max-width: 360px; min-height: 420px; scroll-snap-align: start;">
+            <div
+              class="card"
+              style="
+                min-width: 420px;
+                max-width: 360px;
+                min-height: 420px;
+                scroll-snap-align: start;
+              "
+            >
               <div class="card-img-wrapper">
                 <img
                   src="assets/img/sadaf.png"
@@ -737,46 +785,9 @@
                 </div>
               </div>
             </div>
-
-            
           </div>
         </div>
       </section>
-
-      <!-- <section id="about" class="about-section">
-        <div class="about-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 justify-content-center">
-            <div class="col-lg-8 content">
-              <h2 class="section-title">A Bit About Me</h2>
-              <p class="about-text">
-                Hi there! I’m a passionate developer who believes that
-                technology is more than just lines of code—it's about solving
-                real-world problems and creating value for businesses. With
-                expertise in React, Node.js, and Agile workflows, I craft
-                solutions that streamline processes, empower teams, and deliver
-                measurable results.
-              </p>
-              <p class="about-highlight">
-                My focus has always been on connecting with stakeholders,
-                understanding business needs, and delivering solutions that
-                truly make an impact. Whether it’s collaborating with a team or
-                taking on independent challenges, I thrive on the journey of
-                innovation and growth.
-              </p>
-              <p class="about-cta">
-                Ready to transform ideas into reality? Let’s build something
-                extraordinary together!
-              </p>
-              <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Contact Me</a>
-                <a href="projects.html" class="btn btn-outline-primary"
-                  >View My Projects</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
     </main>
     <!-- Scroll Top -->
     <a

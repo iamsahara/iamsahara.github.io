@@ -15,37 +15,14 @@
   --nav-dropdown-background-color: rgba(0, 0, 0, 0.8);
   --nav-dropdown-hover-color: #ffd700; /* Dropdown hover */
 
-
   --breakpoint-mobile: 320px;
   --breakpoint-tablet: 760px;
   --breakpoint-desktop: 1280px;
   
-}
-
-
-:root {
   scroll-behavior: smooth;
+ 
 }
 
-
-
-.light-background {
-  --background-color: #1a1a1a;
-  --surface-color: #343434;
-}
-
-.dark-background {
-
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #292929f9;
-  --contrast-color: #000000;
-}
-
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -534,7 +511,6 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
-  visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: -15px;
@@ -655,6 +631,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+
 section,
 .section {
   color: var(--default-color);
@@ -677,7 +654,6 @@ section,
 .hero {
   min-width: 30%;
   min-height: 100vh;
-  /* position: relative; */
   padding: 80px 0;
   display: flex;
   flex-direction: row-reverse;
@@ -695,6 +671,11 @@ section,
   height: 100%;
   object-fit: cover;
   align-items: center;
+}
+.hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .hero .container {
@@ -722,6 +703,20 @@ section,
   font-size: 32px;
   font-weight: 700;
 }
+.download-icon {
+  margin-right: 10px; /* Space between the icon and text */
+  transition: filter 0.3s ease; /* Smooth hover effect for icon */
+}
+
+.modern-button:hover .download-icon {
+  filter: brightness(2); /* Brighten the icon on hover */
+}
+
+/* Text styling */
+.resume-text {
+  font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font */
+  letter-spacing: 0.5px; /* Add a slight spacing for readability */
+}
 .profile-photo{
     width: 100px; 
     height: 100px;
@@ -738,7 +733,7 @@ section,
   color: #000000;
 }
 .hero p {
-  margin: 5px 0 0 0;
+  /* margin: 5px 0 0 0; */
   font-size: 18px;
 }
 
@@ -756,7 +751,7 @@ section,
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 .social-links a {
   position: relative;
@@ -765,7 +760,7 @@ section,
 
 .social-links a:hover::after {
   position: absolute;
-  top: 40px;
+  /* top: 40px; */
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.8);
@@ -878,7 +873,6 @@ section,
   font-weight: 600;
   transition: all 0.3s ease; /* Smooth transitions for hover effects */
   cursor: pointer;
-  margin-top: 2rem;
 }
 
 /* Hover effect */
@@ -889,39 +883,47 @@ section,
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
   transform: translateY(-2px); /* Slight lift effect */
 }
+.skills-scroll-outer {
+  width: 100%;
+  overflow: hidden;
+}
 
+
+.skills-scroll-inner {
+  width: max-content;
+  display: inline-block;
+
+  white-space: nowrap;
+  animation: scrollSkills 50s linear infinite;
+}
+
+.skills__list-wrapper {
+  display: inline-flex;
+
+
+}
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 /* Icon styling */
-.download-icon {
-  margin-right: 10px; /* Space between the icon and text */
-  transition: filter 0.3s ease; /* Smooth hover effect for icon */
-}
 
-.modern-button:hover .download-icon {
-  filter: brightness(2); /* Brighten the icon on hover */
-}
 
-/* Text styling */
-.resume-text {
-  font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font */
-  letter-spacing: 0.5px; /* Add a slight spacing for readability */
-}
 
-.skills__list-container:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
-}
 
 .skills__list-container:hover .icons {
   width: 50px;
   height: 50px;
   transition: transform 0.5s ease, filter 0.3s ease;
-  filter: brightness(1.2); 
+  transform: rotate(360deg) scale(1.1); 
+
 }
-.skills__list-container:hover .icons {
-  transform: rotate(360deg) scale(1.3); 
-  filter: brightness(1.5);
-}
-/* Consistent icon size */
+
+
 .skills__list-container .icons {
   width: 50px; 
   height: 50px;
@@ -932,6 +934,7 @@ section,
   display: flex;
   flex-direction: column; 
   justify-content: center;
+  align-items: center;
 }
 
 .skills__item-title {
@@ -945,9 +948,7 @@ section,
   display: none;
 }
 
-.skills__list-container:hover .skills__item-title {
-  color: #ff6347;
-}
+
 
 /* --------------------------------------------------------------
 # Fade-in Animation for Skill Items
@@ -966,14 +967,6 @@ section,
 /* --------------------------------------------------------------
 # Flashing Glow Effect on Hover
 -------------------------------------------------------------- */
-.skills__list-container:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.3); 
-}
-.skills__list-container {
-  padding: 5px;
-}
 
 /* --------------------------------------------------------------
 # Media Queries for Responsiveness
@@ -1271,149 +1264,6 @@ background: rgba(255, 255, 255, 0.9);
   cursor: not-allowed;
 }
 
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-
-:root {
-  --breakpoint-mobile: 320px;
-  --breakpoint-tablet: 760px;
-  --breakpoint-desktop: 1280px;
-}
-
-.contact {
-  border-radius: 10px !important;
-  background-color: color-mix(in srgb, var(--default-color), transparent 15%) !important;
-  color: #000000 !important;
-  width: 90% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  margin: 0 auto !important;
-  margin-top: 5em !important;
-}
-
-.contact .info-item {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.contact .info-item .icon {
-  color: var(--contrast-color) !important;
-  background-color: color-mix(in srgb, black, transparent 80%) !important;
-  width: 50px !important;
-  height: 50px !important;
-  font-size: 24px !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  transition: all 0.3s ease-in-out !important;
-  border-radius: 50% !important;
-  margin-right: 8px !important;
-}
-
-.contact .info-item h3 {
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  margin: 0 0 5px 0 !important;
-  color: #000000 !important;
-}
-
-.contact .info-item p {
-  padding: 0 !important;
-  margin: 0.25rem !important;
-  font-size: 14px !important;
-}
-
-.contact .php-email-form {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
-  padding: 10px !important;
-  margin-top: 20px !important;
-  background: linear-gradient(135deg, #f3f8ff, #e8f0fd) !important;
-  border-radius: 12px !important;
-  width: 100% !important;
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  color: #333 !important;
-  background-color: #ffffff !important;
-  border: 2px solid transparent !important;
-  font-size: 16px !important;
-  padding: 12px 15px !important;
-  border-radius: 8px !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
-  width: 100% !important;
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #ff9f43 !important;
-  box-shadow: 0 4px 8px rgba(255, 159, 67, 0.4) !important;
-  outline: none !important;
-}
-
-.contact .php-email-form button[type=submit] {
-  color: #ffffff !important;
-  background: linear-gradient(135deg, #ff9f43, #ff6f61) !important;
-  border: none !important;
-  padding: 12px 30px !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
-  border-radius: 50px !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
-  margin-top: 20px !important;
-}
-
-/* Mobile (max-width: 320px) */
-@media (max-width: var(--breakpoint-mobile)) {
-  .form {
-    width: 100% !important;
-    margin:0 !important;
-    padding: 0 !important;
-  }
- 
-  .php-email-form {
-    padding: 0 !important;
-    box-sizing: border-box !important; 
-    margin: 0 !important;
-  }
-
-  .contact .php-email-form input[type=text],
-  .contact .php-email-form input[type=email],
-  .contact .php-email-form textarea {
-    width: 100% !important; 
-    box-sizing: border-box !important; 
-    padding: 0;
-  }
-  .contact .section{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .contact .php-email-form button[type=submit] {
-    width: 100% !important; 
-    margin: 15px 0 0 0 !important; 
-    box-sizing: border-box !important;
-  }
-
-  .contact .info-item {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .contact .info-item .icon {
-    margin-right: 0 !important;
-    margin-bottom: 10px !important;
-  }
-}
-
 @media (max-width: 576px) {
   .projects-section .card {
     min-width: 260px !important;
@@ -1433,19 +1283,7 @@ background: rgba(255, 255, 255, 0.9);
     gap: 1rem;
   }
 }
-.projects-section .card {
-  width: 100%;
-  max-width: 360px;
-  min-width: 300px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+
 
 .projects-section .card {
   width: 100%;
@@ -1582,47 +1420,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
 
 @keyframes php-email-form-loading {
   0% {
@@ -1844,58 +1642,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Navigation */
 @media (max-width: 759px) {
-  .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
+  .hero button {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: color 0.3s;
-  }
-
-  .navmenu {
-    padding: 0;
-    z-index: 9997;
-    position: relative;
+    transition: all 0.3s ease;
   }
   
-  .navmenu ul {
-    display: none; 
-    list-style: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0); 
-    border: 1px solid rgba(255, 255, 255, 0.1); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
-    overflow-y: auto;
-    max-height: 300px; 
-    transition: opacity 0.3s ease, transform 0.3s ease; 
-    opacity: 0; 
-    transform: translateY(-20px); 
-    z-index: 9998;
+  .hero button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
-  
-  /* Show dropdown on hover */
-  .navmenu:hover ul,
-  .navmenu ul:focus-within {
-    display: block;
-    opacity: 1;
-    transform: translateY(0); 
-  }
-  
-  
-  .navmenu ul li {
-    padding: 10px 20px;
-    text-align: left;
-    font-size: 16px;
-    color: #fff; 
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
  
   :root {
     --hover-bg-color: rgba(255, 255, 255, 0.1); 
@@ -2414,19 +2177,6 @@ section,
   font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font */
   letter-spacing: 0.5px; /* Add a slight spacing for readability */
 }
-
-/*-------------------------------------------------------------
-# General Layout for Skills Section
--------------------------------------------------------------- */
-
-/* --------------------------------------------------------------
-# Style for each skill container (Frontend, Backend, DevOps)
--------------------------------------------------------------- */
-
-
-/* --------------------------------------------------------------
-# Hover Effects for Skills Cards
--------------------------------------------------------------- */
 
 /* --------------------------------------------------------------
 # Fade-in Animation for Skill Items
