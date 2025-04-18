@@ -37,81 +37,12 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <div class="wrapper mb-20">
-          <div class="container" data-aos="zoom-out" data-aos-delay="100">
-            <img
-              class="profile-photo"
-              src="./assets/img/Image.jpeg"
-              alt="sahar-photo"
-              width="2000"
-              height="2000"
-            />
-            <h2 class="h-home">Sahar Abd</h2>
-            <p>
-              <span
-                class="typed d-home"
-                data-typed-items="Full-Stack Developer, Software Engineer, Problem Solver, Creative Thinker, Bridging Ideas with Code, Cat Mom!"
-              ></span
-              ><span class="typed-cursor typed-cursor--blink"></span>
-            </p>
-            <a
-              href="./assets/resume/sahar_resume.pdf"
-              download
-              class="modern-button"
-            >
-              <img
-                src="./assets/img/resume.png"
-                alt="Download Icon"
-                class="download-icon"
-                width="20"
-                height="20"
-              />
-              <span class="resume-text">Download Resume</span>
-            </a>
-            <div class="social-links">
-              <a href="https://github.com/iamsahara">
-                <img
-                  src="./assets/img/logo/github.svg"
-                  alt="GitHub"
-                  width="24"
-                  height="24"
-              /></a>
-              <a href="https://www.linkedin.com/in/saharabdollahi/"
-                ><img
-                  src="./assets/img/logo/LinkedIn_icon.svg.png"
-                  alt="GitHub"
-                  width="24"
-                  height="24"
-              /></a>
-
-              <a href="mailto:sahar.abdollahi@torontomu.ca">
-                <img
-                  src="./assets/img/logo/email.svg"
-                  alt="Email"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </div>
-            <a
-              href="#projects"
-              class="modern-button"
-              style="
-                margin-top: 1rem;
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                padding: 10px 20px;
-              "
-            >
-              Projects
-            </a>
-          
-          </div>
+        <div class="wrapper mb-1">
           <div id="skills" class="Skills section">
             <div class="skills-container">
-              <div class="skills-scroll-outer overflow-hidden w-100 mb-20">
+              <div class="skills-scroll-outer overflow-hidden w-100 ">
                 <div class="skills-scroll-inner">
+                  
                   <div class="skills__list-wrapper d-inline-flex gap-5">
                     <div
                       class="skills__list-container"
@@ -834,7 +765,85 @@
                   </div>
                 </div>
               </div>
+              <lottie-player
+              src="./assets/js/rocket.json"
+              background="transparent"
+              speed="1"
+              style="
+                width: 10px;
+                height: 10px;
+                transform: scaleX(-1);
+                z-index: 1000;
+                position: relative;
+              "
+              loop
+              autoplay
+            ></lottie-player>
             </div>
+          </div>
+          <div class="container" data-aos="zoom-out" data-aos-delay="100">
+            <img
+              class="profile-photo"
+              src="./assets/img/Image.jpeg"
+              alt="sahar-photo"
+              width="2000"
+              height="2000"
+            />
+            <h2 class="h-home">Sahar Abd</h2>
+            <p>
+              <span
+                class="typed d-home"
+                data-typed-items="Full-Stack Developer, Software Engineer, Creative Thinker, Cat Mom!"
+              ></span
+              ><span class="typed-cursor typed-cursor--blink"></span>
+            </p>
+            <a
+              href="./assets/resume/sahar_resume.pdf"
+              download
+              class="modern-button"
+            >
+              <img
+                src="./assets/img/resume.png"
+                alt="Download Icon"
+                class="download-icon"
+                width="20"
+                height="20"
+              />
+              <span class="resume-text">Download Resume</span>
+            </a>
+            <div class="social-links" style="display: flex; gap: 1rem; justify-content: center;">
+              <div style="text-align: center;">
+                <a href="https://github.com/iamsahara" target="_blank">
+                  <img src="./assets/img/logo/github.svg" alt="GitHub" width="24" height="24" />
+                </a>
+                <div style="color: white; font-size: 0.8rem;">GitHub</div>
+              </div>
+              <div style="text-align: center;">
+                <a href="https://www.linkedin.com/in/saharabdollahi/" target="_blank">
+                  <img src="./assets/img/logo/LinkedIn_icon.svg.png" alt="LinkedIn" width="24" height="24" />
+                </a>
+                <div style="color: white; font-size: 0.8rem;">LinkedIn</div>
+              </div>
+              <div style="text-align: center;">
+                <a href="mailto:sahar.abdollahi@torontomu.ca">
+                  <img src="./assets/img/logo/email.svg" alt="Email" width="24" height="24" />
+                </a>
+                <div style="color: white; font-size: 0.8rem;">Email</div>
+              </div>
+            </div>
+            <a
+              href="#projects"
+              class="modern-button"
+              style="
+                margin-top: 1rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 10px 20px;
+              "
+            >
+              Projects
+            </a>
           </div>
         </div>
       </section>
@@ -1227,17 +1236,17 @@
           </div>
         </div>
 
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-    <!-- Preloader -->
-    <div id="preloader"></div>
-  </section>
-  </main>
+        <!-- Scroll Top -->
+        <a
+          href="#"
+          id="scroll-top"
+          class="scroll-top d-flex align-items-center justify-content-center"
+          ><i class="bi bi-arrow-up-short"></i
+        ></a>
+        <!-- Preloader -->
+        <div id="preloader"></div>
+      </section>
+    </main>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
