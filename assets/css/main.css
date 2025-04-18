@@ -387,8 +387,8 @@ section,
 
 .skills-scroll-inner {
   width: max-content;
-  display: inline-block;
-
+  display: flex;
+  gap: 3rem;
   white-space: nowrap;
   animation: scrollSkills 50s linear infinite;
 }
@@ -406,6 +406,7 @@ section,
     transform: translateX(-50%);
   }
 }
+
 
 .skills__list-container:hover .icons {
   width: 50px;
@@ -1492,9 +1493,10 @@ section,
 
 .projects-section {
   background: transparent;
+  margin-top: 0;
   /* background-color:var(--background-color); */
-  padding: 5px 5px;
-  /* scroll-margin-top: 100px; */
+
+  scroll-margin-top: 100px;
   overflow: clip;
   display: flex;
   flex-direction: column;
