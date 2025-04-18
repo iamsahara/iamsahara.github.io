@@ -2,48 +2,20 @@
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
-
-  --default-color: #fafafa; /* Primary text color */
-  --heading-color: #f5f4e4; /* Heading and title color */
-  --accent-color: hsl(42, 11%, 18%); 
-  --surface-color: #1a1a1a; /* Boxed element backgrounds */
-  --contrast-color: #000000; /* Text on bright backgrounds */
-
-  --nav-font: "Poppins", sans-serif;
-  --nav-color: #ffffff; /* Primary nav text color */
-  --nav-hover-color: #ff6f61; /* Hover state color */
+  --default-color: #fafafa;
+  --heading-color: #f5f4e4;
+  --accent-color: hsl(42, 11%, 18%);
+  --surface-color: #1a1a1a;
+  --contrast-color: #000000;
+  --nav-color: #ffffff;
+  --nav-hover-color: #ff6f61;
   --nav-dropdown-background-color: rgba(0, 0, 0, 0.8);
-  --nav-dropdown-hover-color: #ffd700; /* Dropdown hover */
-
+  --nav-dropdown-hover-color: #ffd700;
   --breakpoint-mobile: 320px;
   --breakpoint-tablet: 760px;
   --breakpoint-desktop: 1280px;
-
-  scroll-behavior: smooth;
- 
-}
-:root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
-
-  --default-color: #fafafa; /* Primary text color */
-  --heading-color: #f5f4e4; /* Heading and title color */
-  --accent-color: hsl(42, 11%, 18%); 
-  --surface-color: #1a1a1a; /* Boxed element backgrounds */
-  --contrast-color: #000000; /* Text on bright backgrounds */
-
-
-  --breakpoint-mobile: 320px;
-  --breakpoint-tablet: 760px;
-  --breakpoint-desktop: 1280px;
-  
-}
-
-:root {
   scroll-behavior: smooth;
 }
-
 .light-background {
   --background-color: #1a1a1a;
   --surface-color: #343434;
@@ -63,7 +35,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: url('../img/hero-bg.jpeg') no-repeat center center fixed; */
+  background: url('../img/hero-bg.jpeg') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
   font-family: var(--default-font);
@@ -71,55 +43,6 @@ body {
   overflow-x: hidden; 
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-}
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -187,13 +110,11 @@ section,
 --------------------------------------------------------------*/
 .hero {
   min-width: 30%;
-  min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  align-items: center;
-  
 }
 
 .hero-img {
@@ -865,18 +786,6 @@ background: rgba(255, 255, 255, 0.9);
 }
 
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
-body {
-  margin: 0;
-  padding: 0;
-  background: url('../img/hero-bg.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
-  font-family: var(--default-font);
-  overflow-x: hidden; 
-}
 
 a {
   color: var(--accent-color);
@@ -987,50 +896,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-#About 
---------------------------------------------------------------*/
-.about-section {
-  padding: 4rem 2rem;
-  background: linear-gradient(145deg, #fdfdfd, #f0f0f0);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  margin: 6rem auto;
-  max-width: 960px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.about-section .section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 1.5rem;
-}
-
-.about-text,
-.about-highlight,
-.about-cta {
-  font-size: 1.1rem;
-  color: #444;
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.about-highlight {
-  color: #007bff;
-  font-weight: 600;
-}
-
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -1039,37 +904,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5rem;
 }
 
-
-.btn {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 25px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.4);
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-  box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.6);
-}
-
-.btn-outline-primary {
-  background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
-}
-
-.btn-outline-primary:hover {
-  background-color: #007bff;
-  color: #fff;
-}
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -1087,19 +921,6 @@ section,
   .section {
     scroll-margin-top: 66px;
   }
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-.hero {
-  min-width: 30%;
-  /* position: relative; */
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-img {
