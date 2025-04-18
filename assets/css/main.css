@@ -22,6 +22,40 @@
   scroll-behavior: smooth;
  
 }
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+
+  --default-color: #fafafa; /* Primary text color */
+  --heading-color: #f5f4e4; /* Heading and title color */
+  --accent-color: hsl(42, 11%, 18%); 
+  --surface-color: #1a1a1a; /* Boxed element backgrounds */
+  --contrast-color: #000000; /* Text on bright backgrounds */
+
+
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 760px;
+  --breakpoint-desktop: 1280px;
+  
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.light-background {
+  --background-color: #1a1a1a;
+  --surface-color: #343434;
+}
+
+.dark-background {
+
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #292929f9;
+  --contrast-color: #000000;
+}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -661,7 +695,7 @@ background: rgba(255, 255, 255, 0.9);
 /* Divider */
 .project-divider {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #000000;
   margin: 3rem 0;
 }
 
@@ -763,8 +797,8 @@ background: rgba(255, 255, 255, 0.9);
 
   .projects-section .container.overflow-auto {
     overflow-x: auto;
-    padding-left: 5px;
-    padding-right: 10px;
+    /* padding-left: 5px;
+    padding-right: 10px; */
   }
 
   .projects-section .d-flex {
@@ -807,22 +841,20 @@ background: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: 0.5rem;
+  margin: 0.25rem;
 }
 
 .projects-section .card-text {
   font-size: 0.9rem;
   color: #444;
-  margin-bottom: 1rem;
   overflow-wrap: break-word;
   flex-grow: 1;
 }
 
 .projects-section .badge {
   font-size: 0.7rem;
-  margin: 2px 4px 4px 0;
   white-space: nowrap;
-  padding: 0.3em 0.6em;
+  padding: 3rem;
 }
 
 .projects-section .btn {
@@ -831,41 +863,7 @@ background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   margin-right: 0.25rem;
 }
-:root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
 
-  --default-color: #fafafa; /* Primary text color */
-  --heading-color: #f5f4e4; /* Heading and title color */
-  --accent-color: hsl(42, 11%, 18%); 
-  --surface-color: #1a1a1a; /* Boxed element backgrounds */
-  --contrast-color: #000000; /* Text on bright backgrounds */
-
-
-  --breakpoint-mobile: 320px;
-  --breakpoint-tablet: 760px;
-  --breakpoint-desktop: 1280px;
-  
-}
-
-
-:root {
-  scroll-behavior: smooth;
-}
-
-.light-background {
-  --background-color: #1a1a1a;
-  --surface-color: #343434;
-}
-
-.dark-background {
-
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #292929f9;
-  --contrast-color: #000000;
-}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
