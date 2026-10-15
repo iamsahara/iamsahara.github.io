@@ -1,0 +1,6 @@
+Use case: precise-object-edit
+Asset type: existing neon gallery room background for a website, with real project frames and book covers added separately in HTML.
+Input image 1 is the edit target. Preserve this exact room, camera, exposed ceiling, neon lighting, colors, plants, side-wall artwork, empty back wall, floor texture and photorealistic 3D quality.
+Change only the foreground display table: bring it closer to the viewer and lower in the image so that the center of its horizontal tabletop is at 78% of the image height instead of 64%. The table should span approximately x=18% to x=82%. Its legs should reach near y=96%. Keep the same dark metal design, cyan rim, realistic perspective, contact shadows and reflections. Leave the table completely empty.
+Keep the back wall and floor behind the table exactly as they are. The empty region between y=18% and y=56% of the back wall must remain unobstructed so larger readable project frames can be placed there. The table relocation creates space for larger book covers above the tabletop without overlapping those frames.
+Do not add any frames, books, text, logos, UI or other new objects. Preserve the wide 2:1 composition.
