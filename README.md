@@ -16,7 +16,7 @@ The site also works through a static HTTP server. `index.html` contains the gall
 ## Rooms
 
 - Products (`#projects`): AdaBudget, ProsPix, LuxShades, AdaHome, AdaPay, and MedPass. Selecting a frame opens a centered detail dialog. A public GitHub contribution calendar appears above them.
-- Bookshelf (`#books`): My First Persian Alphabet, MY IRAN: Landmarks & Architecture, and IRAN: Patterns & Decorative Arts. Books sit on a wall shelf; phones show a swipeable shelf with previous/next controls. The alphabet book links to its verified Amazon.ca listing. The two Iranian art books link to cover previews; preparation records do not establish published listings.
+- Bookshelf (`#books`): My First Persian Alphabet, MY IRAN: Landmarks & Architecture, and IRAN: Patterns & Decorative Arts. Books sit on a wall shelf; phones show a swipeable shelf with previous/next controls. All three books link to their Amazon.ca paperback listings, verified against the retail titles and product details on October 17, 2026: `B0HLD7KHC4` (Alphabet), `B0HN99T1H5` (Landmarks), and `B0HN9BMM8T` (Patterns).
 - About (`#about`): the approved short biography, selected current portrait, and keyboard-cat photo in a wall-mounted banner. The biography has no separate scroll area. About is a normal room, not a popup.
 
 The top navigation contains only the three room buttons. The former corner wordmark, "Current layout" link, and résumé link are absent. Direct room links and browser Back/Forward work. Dialogs support Escape, outside-click dismissal, focus containment, and return focus.
